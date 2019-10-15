@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css?family=Nanum+Gothic:800&display=swap');
+
+* {
+	font-family: 'Nanum Gothic';
+}
+
+a {
+	color: #000000;
+	text-decoration: none;
+}
+
+a:hover {
+	color: #bbbbbb;
+	text-decoration: none;
+	curosr:pointer;
+}
+/*배경색*/
+.navbar-default{
+	background-color: black;
+	border-color: black;
+}
+.navbar-default .navbar-brand{/*네비게이션 색상*/
+	color:white;
+}
+.navbar-default .navbar-brand:hover,
+.navbar-default .navbar-brand:focus{/*네비게이션 제목에 마우스 올림*/
+	backgournd-color:transparent;
+	color:#bbbbbb;
+}
+.navbar-default .navbar-nav > .active > a,
+.navbar-default .navbar-nav > .active > a:hover,
+.navbar-default .navbar-nav > .active > a:focus{/* 현재 선택된 네이게이션*/
+	color : white;
+	background-color:black;
+}
+.navbar-default .navbar-nav > li > a:hover,
+.navbar-default .navbar-nav > li > a:focus{/* 마우스가 올라갔을떄*/
+	background-color:gray;
+}
+.navbar-default .navbar-nav > .open > a,
+.navbar-default .navbar-nav > .open > a:hover,
+.navbar-default .navbar-nav > .open > a:focus{/* 현재 선택된 네이게이션*/
+	color : black;
+	background-color:#ffffff;
+	text-decoration:none;
+}
+.navbar-default .navbar-nav>li>a{/*네비게이션 기본색상*/
+	color:white;
+}
+@media (max-width: 767px){ /*해상도가 767보다 작을떄 */
+	.navbar-default .navbar-nav .open .dropdown-menu > li > a {
+		color:#ffffff;
+	}
+	.navbar-default .navbar-nav .open .dropdown-menu > li > a:focus,
+	.navbar-default .navbar-nav .open .dropdown-menu > li > a:hover {
+		color:#bbbbbb;
+	}
+
+}
